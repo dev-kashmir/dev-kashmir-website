@@ -73,6 +73,9 @@ highlight {
 .content {
   font-size: 1.5rem;
 }
+.card .scroll{
+  overflow: scroll;
+}
 .button:hover {
   background-color: $app-primary-dark;
   border-color: $app-primary-dark;
