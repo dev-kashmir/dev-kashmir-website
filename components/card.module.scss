@@ -12,6 +12,24 @@
   flex-direction: column;
   overflow: hidden;
 }
+.card_content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_content > .content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card_content > .content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+}
+
 .links {
   margin-top: 5px;
   overflow: hidden;

@@ -27,16 +27,16 @@ export default function Card(props) {
                 </picture>
               </figure>
             </div>
-            <div className="card-content">
+            <div className={`card-content ${styles.card_content}`}>
               <div className="media">
                 <div className="media-content">
                   <p className="title is-4">{data.name}</p>
                   <p className="subtitle is-6">{data.address}</p>
                 </div>
               </div>
-              <div className="content">
+              <div className={`content ${styles.content}`}>
                 <div className={styles.tags}>
-                  {data.tags && data.tags.map((tag, idx) => (
+                  {data.tags && data.tags.sort(() => 0.5 - Math.random()).slice(0,3).map((tag, idx) => (
                     <span
                       key={idx.toString()}
                       className={`tag is-rounded ${styles.tag}`}
@@ -45,7 +45,9 @@ export default function Card(props) {
                     </span>
                   ))}
                 </div>
+                <p>
                 {data.description}
+                </p>
               </div>
             </div>
           </div>
