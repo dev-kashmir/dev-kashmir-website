@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import { NextSeo } from "next-seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 export default function Nominate() {
   return (
@@ -27,13 +28,12 @@ export default function Nominate() {
             And hey, it's alright to nominate yourself. 😊
           </div>
           <div className="buttons">
+            <Link href="/fillform">
             <a
-              href="https://forms.gle/a8eWcAMFWxyqDKG9A"
-              target="_blank"
-              rel="noopener noreferrer"
               className="button is-large">
               Submit a Form
             </a>
+           </Link>
             <a
               href="https://github.com/dev-kashmir/dev-kashmir-website"
               target="_blank"
